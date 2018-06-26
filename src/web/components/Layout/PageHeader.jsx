@@ -25,7 +25,16 @@ class PageHeader extends React.Component {
       'bp-page-header-no-sidebar': !hasSidebar
     })
 
-    return <div className={classNames}>{this.props.children}</div>
+    if (this.props.children && this.props.children.props && this.props.children.props.children) {
+      // console.log(this.props.children.props.children[0]);
+      if (this.props.children.props.children[0].trim() == ''){
+        return <div className={classNames}><span>BlessedBot</span></div>
+      } else {
+        return <div className={classNames}><span>{this.props.children.props.children[0]}</span></div>
+      }
+    } else {
+      return <div className={classNames}>{this.props.children}</div>
+    }
   }
 }
 

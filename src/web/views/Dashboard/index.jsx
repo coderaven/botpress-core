@@ -61,6 +61,7 @@ class Dashboard extends React.Component {
   }
 
   renderPopularModules() {
+    return null;
     return (
       <PermissionsChecker user={this.props.user} op="read" res="bot.modules.list.community">
         <Panel>
@@ -74,6 +75,7 @@ class Dashboard extends React.Component {
   }
 
   renderFeaturedModules() {
+    return null;
     return (
       <PermissionsChecker user={this.props.user} op="read" res="bot.modules.list.community">
         <Panel>

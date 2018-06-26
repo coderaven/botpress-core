@@ -55,6 +55,8 @@ export default class HeroComponent extends React.Component {
   }
 
   render() {
+    return null;
+    
     if (this.state.loading) {
       return null
     }

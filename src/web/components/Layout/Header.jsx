@@ -64,11 +64,11 @@ class Header extends React.Component {
         <Navbar.Collapse>
           <Nav pullRight>
             <NavItem onClick={this.handleFullscreen}>{this.renderFullScreenButton()}</NavItem>
-            <PermissionsChecker user={this.props.user} res="bot.logs" op="read">
+            {/* <PermissionsChecker user={this.props.user} res="bot.logs" op="read">
               <NavItem href="/logs">
                 <Glyphicon glyph="list-alt" />
               </NavItem>
-            </PermissionsChecker>
+            </PermissionsChecker> */}
             <PermissionsChecker user={this.props.user} res="bot.notifications" op="read">
               <NotificationHub />
             </PermissionsChecker>

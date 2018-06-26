@@ -20,21 +20,21 @@ const BASIC_MENU_ITEMS = [
     rule: { res: 'bot.information', op: 'read' },
     icon: 'dashboard'
   },
-  {
-    name: 'Modules',
-    path: '/manage',
-    rule: { res: 'bot.modules.list', op: 'read' },
-    icon: 'build'
-  },
-  window.GHOST_ENABLED && {
-    name: 'Version Control',
-    path: 'version-control',
-    rule: { res: 'bot.ghost_content', op: 'read' },
-    icon: 'content_copy',
-    renderSuffix() {
-      return <GhostChecker />
-    }
-  },
+  // {
+  //   name: 'Modules',
+  //   path: '/manage',
+  //   rule: { res: 'bot.modules.list', op: 'read' },
+  //   icon: 'build'
+  // },
+  // window.GHOST_ENABLED && {
+  //   name: 'Version Control',
+  //   path: 'version-control',
+  //   rule: { res: 'bot.ghost_content', op: 'read' },
+  //   icon: 'content_copy',
+  //   renderSuffix() {
+  //     return <GhostChecker />
+  //   }
+  // },
   {
     name: 'Content',
     path: '/content',
@@ -47,12 +47,12 @@ const BASIC_MENU_ITEMS = [
     rule: { res: 'bot.flows', op: 'read' },
     icon: 'device_hub'
   },
-  {
-    name: 'Middleware',
-    path: '/middleware',
-    rule: { res: 'bot.middleware.list', op: 'read' },
-    icon: 'settings'
-  }
+  // {
+  //   name: 'Middleware',
+  //   path: '/middleware',
+  //   rule: { res: 'bot.middleware.list', op: 'read' },
+  //   icon: 'settings'
+  // }
 ].filter(Boolean)
 
 class Sidebar extends React.Component {

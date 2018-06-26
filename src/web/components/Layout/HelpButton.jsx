@@ -16,6 +16,8 @@ export default class HelpButton extends React.Component {
   }
 
   render() {
+    return null;
+    
     const basePosition = this.state.shown ? 38 : 18
     const btnClass = name =>
       classnames(style.link, style[name], {

@@ -15,9 +15,9 @@ const AboutComponent = props => (
       <h3>
         BlessedBot <b>v{window.BOTPRESS_VERSION}</b>
       </h3>
-      <h5>The only sane way of building great bots</h5>
+      <h5>Bots that are made to bless and bring the Good news.</h5>
       <br />
-      Emoji provided free by <a href="http://emojione.com/">EmojiOne</a>
+      {/* Emoji provided free by <a href="http://emojione.com/">EmojiOne</a> */}
     </Modal.Body>
   </Modal>
 )

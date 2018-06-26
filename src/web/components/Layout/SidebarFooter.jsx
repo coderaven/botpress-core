@@ -165,7 +165,7 @@ class SidebarFooter extends React.Component {
         <div className={sidebarInnerClassNames}>
           <div className={nameClassNames}>{name}</div>
           <div className={productionClassNames}>{production}</div>
-          {this.renderAllLicenseElements()}
+          {/* {this.renderAllLicenseElements()} */}
           <Link className={aboutClassNames} to="#" title="About" onClick={this.openAbout}>
             About BlessedBot
           </Link>
